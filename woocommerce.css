@@ -109,6 +109,88 @@ table.shop_table_responsive .wp-element-button {
   color: #fff;
 }
 
+.woocommerce-checkout-review-order {
+  margin: 1em;
+}
+
+.woocommerce-checkout-review-order-table td, .woocommerce-checkout-review-order-table th,
+.woocommerce-table--order-details td,
+.woocommerce-table--order-details th {
+  padding: 1em 0;
+}
+.woocommerce-checkout-review-order-table .product-name,
+.woocommerce-checkout-review-order-table tfoot th,
+.woocommerce-table--order-details .product-name,
+.woocommerce-table--order-details tfoot th {
+  text-align: left;
+}
+.woocommerce-checkout-review-order-table .product-total,
+.woocommerce-checkout-review-order-table tfoot td,
+.woocommerce-table--order-details .product-total,
+.woocommerce-table--order-details tfoot td {
+  text-align: right;
+}
+.woocommerce-checkout-review-order-table .amount,
+.woocommerce-table--order-details .amount {
+  color: #b3321c;
+}
+.woocommerce-checkout-review-order-table .cart_item,
+.woocommerce-checkout-review-order-table .order_item,
+.woocommerce-table--order-details .cart_item,
+.woocommerce-table--order-details .order_item {
+  padding: 1em;
+  border-top: 1px solid #eee;
+}
+.woocommerce-checkout-review-order-table tfoot,
+.woocommerce-table--order-details tfoot {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #eee;
+}
+.woocommerce-checkout-review-order-table tfoot tr:last-child .amount,
+.woocommerce-table--order-details tfoot tr:last-child .amount {
+  font-weight: bold;
+}
+
+.wc_payment_methods {
+  list-style: none;
+  padding-left: 0;
+  margin: 1em 0;
+}
+.wc_payment_methods .payment_box {
+  background: #eee;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 8px;
+}
+.wc_payment_methods .payment_box p {
+  margin: 0;
+}
+
+.woocommerce-thankyou-order-details {
+  background: #b3d3b3;
+  padding: 1em;
+  border-radius: 8px;
+  list-style: none;
+  color: #005824;
+}
+
+.woocommerce-order-details,
+.woocommerce-customer-details {
+  margin: 1em;
+}
+.woocommerce-order-details address,
+.woocommerce-customer-details address {
+  margin: 1em 0;
+  padding: 1em;
+  background: #a9d2fa;
+  border-radius: 8px;
+  color: #004992;
+}
+.woocommerce-order-details address p,
+.woocommerce-customer-details address p {
+  margin: 1em 0;
+}
+
 @media screen and (min-width: 768px) {
   table.shop_table_responsive thead {
     display: table-header-group;
@@ -400,8 +482,8 @@ ul.products {
  */
 .site-header-cart {
   position: absolute;
-  top: 23px;
-  right: 35px;
+  top: 19px;
+  right: 15px;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -495,6 +577,7 @@ p.stars a {
   text-decoration: none;
   margin-right: 1px;
   font-weight: 400;
+  color: orange;
 }
 
 p.stars a::before {
@@ -520,13 +603,13 @@ p.stars a:hover ~ a::before {
 
 p.stars:hover a::before {
   content: "S";
-  color: #4169e1;
+  color: orange;
   opacity: 1;
 }
 
 p.stars.selected a.active::before {
   content: "S";
-  color: #4169e1;
+  color: orange;
   opacity: 1;
 }
 
@@ -538,7 +621,7 @@ p.stars.selected a.active ~ a::before {
 
 p.stars.selected a:not(.active)::before {
   content: "S";
-  color: #4169e1;
+  color: orange;
   opacity: 1;
 }
 

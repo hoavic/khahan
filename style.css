@@ -502,6 +502,7 @@ input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
   border-color: #941e1e;
+  cursor: pointer;
 }
 
 button:active,
@@ -782,17 +783,17 @@ textarea {
   background: none;
   position: absolute;
   top: 21px;
-  left: 25px;
+  left: 20px;
   padding: 0;
   z-index: 9999;
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 48px;
+  height: 48px;
 }
 
 .toggle-x {
   display: block;
-  width: 30px;
+  width: 40px;
   height: 3px;
   background: #b3321c;
   border-radius: 1px;
@@ -800,7 +801,7 @@ textarea {
 }
 .toggle-x:before, .toggle-x:after {
   display: block;
-  width: 30px;
+  width: 40px;
   height: 3px;
   background: #b3321c;
   border-radius: 1px;
@@ -808,10 +809,10 @@ textarea {
   transition: transform 0.2s ease;
 }
 .toggle-x:before {
-  transform: rotate(0) translate3d(0, -10px, 0);
+  transform: rotate(0) translate3d(0, -12px, 0);
 }
 .toggle-x:after {
-  transform: translateY(7px);
+  transform: translateY(9px);
 }
 
 /* Toggled */
@@ -847,6 +848,65 @@ textarea {
 }
 .widget a {
   color: #727272;
+}
+
+.avatar {
+  border-radius: 2rem;
+}
+
+.comment-notes {
+  color: #949494;
+  font-style: italic;
+}
+
+.commentlist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.comment_container {
+  display: grid;
+  grid-template-columns: 0px auto;
+}
+.comment_container .meta {
+  margin: 0;
+}
+.comment_container .description {
+  background: #eee;
+  padding: 1em;
+  border-radius: 8px;
+  margin: 1em 0;
+}
+.comment_container .description p {
+  margin: 0;
+}
+
+.comment-reply-title {
+  margin: 0.6em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.comment-form-rating label {
+  margin: 1em;
+}
+
+.comment-form-comment label {
+  display: block;
+  margin: 1em 0;
+}
+.comment-form-comment textarea {
+  height: 120px;
+}
+
+.comment-form-author,
+.comment-form-email {
+  display: flex;
+  gap: 1em;
+}
+.comment-form-author input,
+.comment-form-email input {
+  width: 100%;
 }
 
 .widget-title {

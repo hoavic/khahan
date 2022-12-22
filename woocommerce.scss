@@ -132,6 +132,82 @@ table.shop_table_responsive {
 		}
 	}
 }
+.woocommerce-checkout-review-order {
+	margin: 1em;
+}
+.woocommerce-checkout-review-order-table,
+.woocommerce-table--order-details {
+
+	td, th {
+		padding: 1em 0;
+	}
+
+	.product-name,
+	tfoot th, {
+		text-align: left;
+	}
+
+	.product-total,
+	tfoot td {
+		text-align: right; 
+	}
+
+	.amount {
+		color: #b3321c;
+	}
+
+	.cart_item,
+	.order_item {
+		padding: 1em;
+		border-top: 1px solid #eee;	
+	}
+
+	tfoot {
+		border-top: 1px solid #aaa;
+		border-bottom: 1px solid #eee;
+
+		tr:last-child .amount {
+			font-weight: bold;
+		}
+	}
+}
+
+.wc_payment_methods {
+	list-style: none;
+	padding-left: 0;
+	margin: 1em 0;
+
+	.payment_box {
+		background: #eee;
+		margin: 1em;
+		padding: 1em;
+		border-radius: 8px;
+		 p {margin: 0;}
+	}
+}
+
+.woocommerce-thankyou-order-details {
+    background: #b3d3b3;
+    padding: 1em;
+    border-radius: 8px;
+    list-style: none;
+    color: #005824;
+}
+
+.woocommerce-order-details,
+.woocommerce-customer-details {
+	margin: 1em;
+	address {
+		margin: 1em 0;
+		padding: 1em;
+		background: #a9d2fa;
+		border-radius: 8px;
+		color: #004992; 
+		p {
+			margin: 1em 0;
+		}
+	}
+}
 
 @media screen and (min-width: 768px) {
 
@@ -501,8 +577,8 @@ ul.products li.product .button,
 .site-header-cart {
 
 	position: absolute;
-    top: 23px;
-    right: 35px;
+    top: 19px;
+    right: 15px;
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -608,6 +684,7 @@ p.stars a {
 	text-decoration: none;
 	margin-right: 1px;
 	font-weight: 400;
+	color: orange;
 }
 
 p.stars a::before {
@@ -633,13 +710,13 @@ p.stars a:hover ~ a::before {
 
 p.stars:hover a::before {
 	content: "\53";
-	color: #4169e1;
+	color: orange;
 	opacity: 1;
 }
 
 p.stars.selected a.active::before {
 	content: "\53";
-	color: #4169e1;
+	color: orange;
 	opacity: 1;
 }
 
@@ -651,7 +728,7 @@ p.stars.selected a.active ~ a::before {
 
 p.stars.selected a:not(.active)::before {
 	content: "\53";
-	color: #4169e1;
+	color: orange;
 	opacity: 1;
 }
 
