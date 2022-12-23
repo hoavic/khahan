@@ -947,14 +947,50 @@ textarea {
     font-weight: 300;
 }
 
+.btn-action {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
+}
+
+.promo-icon {
+    padding: 1em;
+    background: #fef2f2;
+}
+
+.ads-grid {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.ads-item {
+	display: flex;
+	font-weight: bold;
+	gap: 1em;
+	align-items: center;
+	>img {
+		max-height: 90px;
+	}
+}
+
+.ads-text {
+    display: none;
+}
+
 .site-footer {
     padding: 1.618em 0 0.3em;
-	margin: 1em 0 3em;
+	margin: 0 0 3em;
     background-color: #b3321c;
     background: url(/wp-content/themes/lxshop/pattern-red.gif);
     background-repeat: repeat;
     color: #fff;
-
+    text-align: center;
 	a {
 		color: #fff;
 	}
@@ -1025,6 +1061,10 @@ textarea {
 				display: inline-block;
 			}
 		}
+	}
+
+	.ads-text {
+		display: block;
 	}
 }
 

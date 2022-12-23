@@ -447,6 +447,17 @@ ul.products {
   margin: 1em;
 }
 
+.form-row label {
+  color: #6e7171;
+}
+
+.woocommerce-input-wrapper {
+  display: block;
+}
+.woocommerce-input-wrapper input {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .single-product--grid {
     display: grid;
@@ -456,24 +467,14 @@ ul.products {
   .single-product .summary {
     border-width: 0px;
   }
+  .woocommerce-billing-fields__field-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /**
  * Checkout
  */
-@media screen and (min-width: 768px) {
-  .col2-set .form-row-first {
-    float: left;
-    margin-right: 3.8%;
-  }
-  .col2-set .form-row-last {
-    float: right;
-    margin-right: 0;
-  }
-  .col2-set .form-row-first,
-.col2-set .form-row-last {
-    width: 48.1%;
-  }
-}
 /**
  * General WooCommerce components
  */
